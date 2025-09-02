@@ -107,11 +107,11 @@ public class InterfaceUsuario {
             try {
                 System.out.print(msg);
                 valor = sc.nextInt();
-                sc.nextLine(); // limpar buffer
+                sc.nextLine();
                 return valor;
             } catch (InputMismatchException e) {
                 System.out.println("⚠ Entrada inválida. Digite um número inteiro.");
-                sc.nextLine(); // limpa o que sobrou no buffer
+                sc.nextLine();
             }
         }
     }
@@ -151,3 +151,4 @@ public class InterfaceUsuario {
         }
     }
 }
+
