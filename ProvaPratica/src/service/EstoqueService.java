@@ -161,7 +161,7 @@ public class EstoqueService {
                 equipamentoList.remove(i);
                 removido = true;
                 if (e instanceof MotorEletrico) {
-                    estoqueMotorList.remove((MotorEletrico) e); // cast correto
+                    estoqueMotorList.remove((MotorEletrico) e);
                 } else if (e instanceof PainelControle) {
                     painelControleList.remove((PainelControle) e);
                 }
@@ -293,3 +293,4 @@ public class EstoqueService {
         if (!encontrou) interfaceUsuario.exibirMensagem("Nenhum equipamento acima desse preço.");
     }
 }
+
